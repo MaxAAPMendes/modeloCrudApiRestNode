@@ -30,21 +30,25 @@ export default function Home() {
           <div className={styles.containerLinkInsta}>
             <Link
               href="https://instagram.com/marcelalovedogs?igshid=MzRIODBiNWFIZA=="
-              style={{ fontWeight: "bold", display: "flex", alignItems: "center", justifyContent: "center" }}
             >
-              <InstagramIcon fontSize='small'/> @marcelalovedos
+              <div className={styles.containerIconeSocialMidia}>
+                <div><InstagramIcon fontSize='small'/></div>
+                <div>@marcelalovedos</div>
+              </div>
             </Link>
           </div>
-          <div className={styles.containerWhats}>
+          <div>
             <Link
               href="https://api.whatsapp.com/send?1=pt_br&phone=5561983773747"
               style={{ fontWeight: "bold", display: "flex", alignItems: "center", justifyContent: "center", color: "green" }}
             >
-              <WhatsAppIcon fontSize='small'/> (61) 983773747
+              <div className={styles.containerIconeSocialMidia}>
+                <div><WhatsAppIcon fontSize='small'/></div><div>(61) 9 8377 3747</div>
+              </div>
             </Link>
           </div>
         </main>
-        <footer className={styles.grid}>
+        <footer className={styles.footer}>
           <p>By{' Max Pinheiro'}</p>
         </footer>
       </Container>
